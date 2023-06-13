@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './_variables';
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  &::selection {
+    background-color: $brand;
+    color: $primary;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 1150px;
+  margin: auto;
+  padding: 9.6rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 7.2rem 2.4rem;
+  }
+}
+
+.social-container {
+  display: flex;
+  gap: 1.6rem;
+
+  .social-link {
+    font-size: 24px;
+    transition-property: background-color, border-color, opacity, color;
+    transition-timing-function: ease;
+    transition-duration: 100ms;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      color: $brand;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import './_variables';
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.4rem;
+}
+
+.aboutText {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 2.4rem;
+}
+
+.letterHighlighter {
+  &::first-letter {
+    float: left;
+    font-size: $text-md;
+    font-weight: 700;
+    background-color: $primary-light;
+    border-radius: 0.4rem;
+    margin-right: 0.6rem;
+    padding: 1rem;
+  }
+}

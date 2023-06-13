@@ -1,0 +1,62 @@
+@import './_variables';
+
+.navBar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  .logo {
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: $text-md;
+    font-weight: 900;
+    line-height: 1;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-light;
+    border-radius: 4px;
+    margin: 1.8rem 0;
+
+    span {
+      font-size: $text-md;
+      font-weight: 900;
+      line-height: 1;
+      color: $brand;
+    }
+  }
+
+  a {
+    writing-mode: vertical-lr;
+    width: 100%;
+    height: 100px;
+    font-size: $text-sm;
+    font-weight: 200;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    border-right: 1px solid transparent;
+    transition: all 100ms;
+
+    &:hover {
+      background-color: $primary-light;
+      border-color: $brand;
+      opacity: 1;
+    }
+  }
+
+  a.selected {
+    background: $primary-light;
+    border-right: 1px solid $brand;
+    opacity: 1;
+  }
+}

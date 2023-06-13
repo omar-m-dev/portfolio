@@ -1,0 +1,38 @@
+@import './_variables';
+
+.dotGrid {
+  display: grid;
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  right: 3.6rem;
+  max-width: 75%;
+  z-index: 0;
+}
+
+.dotWrapper {
+  cursor: crosshair;
+  padding: 0.8rem;
+  border-radius: 8px;
+  transition: background-color 250ms ease;
+
+  &:hover {
+    background-color: $primary-light;
+
+    .dotPoint {
+      background: linear-gradient(180deg, $primary, $brand) !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+.dotPoint {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.35;
+  transition-property: background, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+  background: linear-gradient(180deg, $primary, $text);
+}
