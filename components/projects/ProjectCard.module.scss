@@ -1,0 +1,56 @@
+@import '@/styles/_variables';
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: $primary-light;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+
+  .image {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 20%;
+    border-radius: 0.4rem;
+    transition-property: width, rotate;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    rotate: 0deg;
+  }
+
+  &:hover {
+    .image {
+      rotate: 2deg;
+    }
+  }
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  h4 {
+    font-weight: bold;
+    font-size: $text-md;
+    flex-shrink: 0;
+    max-width: calc(100% - 150px);
+  }
+
+  .projectLink {
+    opacity: 0.75;
+    transition-property: color, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+
+    &:hover {
+      opacity: 1;
+      color: $brand;
+    }
+  }
+}
