@@ -21,7 +21,6 @@ interface Props {
 const ProjectModal = ({
   title,
   tech,
-  desc,
   img,
   live,
   github,
@@ -51,7 +50,7 @@ const ProjectModal = ({
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         onClick={e => e.stopPropagation()}
-        className="h-fit w-full max-w-[700px] cursor-auto overflow-hidden rounded-[1.2rem] bg-primary-light shadow-modal-shadow"
+        className="h-fit w-full max-w-[700px] cursor-auto overflow-hidden rounded-[1.2rem] bg-primary-light shadow-modal"
       >
         <Image
           priority

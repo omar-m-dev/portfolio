@@ -1,9 +1,9 @@
-import Navbar from './nav/Navbar'
-import Header from './nav/Header'
-import Hero from './hero/Hero'
-import About from './about/About'
-import Projects from './projects/Projects'
-import Experience from './experience/Experience'
-import Contact from './contact/Contact'
+import Navbar from "./Navbar";
+import Header from "./Header";
+import Hero from "./Hero";
+import About from "./About";
+import Projects from "./Projects";
+import Experience from "./Experience";
+import Contact from "./Contact";
 
-export { Navbar, Header, Hero, About, Projects, Experience, Contact }
+export { Navbar, Header, Hero, About, Projects, Experience, Contact };

@@ -36,7 +36,7 @@ const Reveal = ({ children, width = 'fit-content' }: Props) => {
           bottom: 4,
           left: 0,
           right: 0,
-          backgroundColor: '#0aff9d',
+          backgroundColor: '#bd5fff',
           zIndex: 20,
         }}
       />

@@ -1,13 +1,13 @@
 export const projects = [
   {
-    title: 'Test Title',
-    tech: ['test', 'test', 'test', 'test'],
-    desc: 'Just a test for project cardJust a test for project cardJust a test for project card',
-    img: 'https://images.unsplash.com/photo-1682686581221-c126206d12f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    title: 'Share Me',
+    tech: ['TypeScript', 'Next.js', 'Tailwind', 'tRPC', 'Prisma', 'SQLite'],
+    desc: 'ShareMe Social Media Application | Pinterest Clone',
+    img: '/project-1.png',
     live: 'https://www.vercel.com',
     github: 'https://www.github.com',
     modalContent:
-      'WorshipHIM is a chord and lyrics app developed to help ease everyone in their worship to God. So that all may know, from the rising of the sun to its setting, That there is none besides God. He is the Lord and theres no other! Praise Him, Worship Him [br]This is a very fun project that i made using React Native.',
+      'ShareMe is a full stack web applications for uploading and sharing images between users, saving your favourite images and adding comments for different pins.[br]Share Me was built with T3 Stack.',
   },
   {
     title: 'Test Title',
@@ -60,7 +60,6 @@ export const stack = [
   'Nest.js',
   'Prisma',
   'TypeORM',
-  'Git',
   'PostgreSQL',
   'MySQL',
   'Redis',
@@ -75,11 +74,12 @@ export const stack = [
 
 export const tools = [
   'Figma',
+  'Git',
+  'Vercel',
   'Stripe',
   'Twilio',
   'SendGrid',
   'Clerk',
-  'Vercel',
   'Github',
   'Linux',
   'VSCode',
@@ -156,9 +156,9 @@ export const exp = [
 ]
 
 export const socials = {
-  linkedIn: 'https://www.linkedin.com/in/omar-m-dev/',
-  github: 'https://github.com/omar-m-dev',
+  linkedIn: 'https://www.linkedin.com/in/omarr-dev/',
+  github: 'https://github.com/omarr-dev',
   twitter: 'https://twitter.com/omarr_dev',
-  codePen: 'https://codepen.io/omar-m-dev',
+  codePen: 'https://codepen.io/omarr-dev',
   email: 'omarmohamed.private@gmail.com',
 }

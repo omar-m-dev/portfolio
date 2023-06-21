@@ -6,13 +6,13 @@ import {
   Hero,
   Navbar,
   Projects,
-} from '@/components'
+} from "@/components";
 
 const App = () => {
   return (
-    <div id="root" className="grid min-h-screen grid-cols-main">
+    <div id='root' className='grid min-h-screen grid-cols-main'>
       <Navbar />
-      <main id="main">
+      <main id='main'>
         <Header />
         <Hero />
         <About />
@@ -21,13 +21,13 @@ const App = () => {
         <Contact />
         <div
           style={{
-            height: '200px',
-            background: 'linear-gradient(180deg, #111111, #080808)',
+            height: "200px",
+            background: "linear-gradient(180deg, #111111, #080808)",
           }}
         />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
